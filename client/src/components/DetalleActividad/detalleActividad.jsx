@@ -17,7 +17,7 @@ function AcitividadDetalle() {
   }, [id]);
   return (
     <div className="actividad">
-      <h1>Actividades:{country.Activities?.map((a) => a.name).join(", ")}</h1>
+      <h1>Actividades: {country.Activities?.map((a) => a.name).join(", ")}</h1>
       <p>
         Dificultad: {country.Activities?.map((a) => a.difficulty).join(", ")}
       </p>

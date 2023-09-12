@@ -7,7 +7,7 @@
   background-color: #f7f7f7;
   border: 1px solid #ccc;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(9, 40, 215, 0.1);
   text-align: center;
 }
 
@@ -15,12 +15,14 @@
 h1 {
   font-size: 24px;
   margin-bottom: 20px;
+  color: blue;
 }
 
 /* Estilos para los párrafos de detalles */
 p {
   margin: 10px 0;
   font-size: 16px;
+  color: darkgreen;
 }
 
 /* Estilos para los detalles de actividades */
@@ -36,6 +38,11 @@ p {
 .actividad {
   background-color: #f7f7f7a7;
   font-family: Oswald;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centrar verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+    height: 50vh; /* Opcional: ajusta la altura del contenedor según el tamaño de la ventana */
   
 
 }

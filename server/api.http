@@ -17,5 +17,5 @@ GET http://localhost:3001/activities
 POST http://localhost:3001/activities
 Content-Type: application/json
 
-{"name": "Futbol", "difficulty": 1, "duration": "10", "season": "Verano", "country": "Republic of Kenya", "country": "Republic of San Marino"}
+{"name": "Futbol", "difficulty": 1, "duration": "10", "season": "Verano", "country": ["Republic of Kenya", "Republic of San Marino"]}
 

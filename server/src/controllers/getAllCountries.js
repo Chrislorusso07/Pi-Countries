@@ -27,7 +27,13 @@ async function getAllCountries(req, res) {
         },
       });
     });
-    const allCountries = await Country.findAll();
+    const allCountries = await Country
+      .findAll
+      // include: {
+      //   model: Activity,
+      //   attributes: ["id", "name", "difficulty", "duration", "season"],
+      // },
+      ();
     res.status(200).json(allCountries);
   } catch (error) {
     res.status(404).json({ error: error.message });

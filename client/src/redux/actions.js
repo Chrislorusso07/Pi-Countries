@@ -7,7 +7,7 @@ export const CLEANER = "CLEANER";
 export const ORDER_BY_NUMBER = "ORDER_BY_NUMBER";
 export const CONTINENTES = "CONTINENTES";
 export const GET_ACTIVITY = "GET_ACTIVITY";
-export const ACTIVITY_FILTER = "ACTIVITY_FILTER";
+// export const ACTIVITY_FILTER = "ACTIVITY_FILTER";
 
 export const alphabeticOrder = (value) => ({
   type: ALPHABETIC_ORDER,
@@ -45,9 +45,9 @@ export const getActivities = () => {
   };
 };
 
-export const activityFilter = (value) => {
-  return { type: ACTIVITY_FILTER, payload: value };
-};
+// export const activityFilter = (value) => {
+//   return { type: ACTIVITY_FILTER, payload: value };
+// };
 
 export const getCountries = () => {
   return async (dispatch) => {

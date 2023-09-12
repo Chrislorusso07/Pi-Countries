@@ -6,7 +6,7 @@ import {
   filterCleaner,
   orderByNumber,
   continentes,
-  activityFilter,
+  // activityFilter,
 } from "../../redux/actions";
 import { useDispatch, useSelector } from "react-redux";
 
@@ -42,10 +42,10 @@ const NavBar = () => {
     dispatch(continentes(value));
   };
 
-  const handlerFilterActivity = (e) => {
-    const selectedValue = e.target.value;
-    dispatch(activityFilter(selectedValue));
-  };
+  // const handlerFilterActivity = (e) => {
+  //   const selectedValue = e.target.value;
+  //   dispatch(activityFilter(selectedValue));
+  // };
 
   return (
     <div className="horizontal">
@@ -72,14 +72,14 @@ const NavBar = () => {
         <option value="Europe">Europa</option>
         <option value="Oceania">Oceanía</option>
       </select>
-      <select onChange={handlerFilterActivity}>
+      {/* <select className="filter" onChange={handlerFilterActivity}>
         <option value="default">Filter by activity</option>
         {activities?.map((activity, index) => (
           <option key={index} value={activity.name}>
             {activity.name}
           </option>
         ))}
-      </select>
+      </select> */}
     </div>
   );
 };

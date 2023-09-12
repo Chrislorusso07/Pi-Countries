@@ -7,7 +7,7 @@ import {
   ORDER_BY_NUMBER,
   CONTINENTES,
   GET_ACTIVITY,
-  ACTIVITY_FILTER,
+  // ACTIVITY_FILTER,
 } from "./actions";
 
 const initialState = {
@@ -72,7 +72,7 @@ const reducer = (state = initialState, { type, payload }) => {
       };
 
     case CONTINENTES:
-      const copy6 = [...state.allCountries];
+      const copy6 = [...state.countriesBackUp];
       const filterByContinent = copy6.filter(
         (con) => con.continent === payload
       );
@@ -81,22 +81,25 @@ const reducer = (state = initialState, { type, payload }) => {
     case GET_ACTIVITY:
       return { ...state, activities: payload };
 
-    case ACTIVITY_FILTER: {
-      const selectedActivity = payload;
-      if (selectedActivity === "default") {
-        return {
-          ...state,
-        };
-      } else {
-        const filteredCountries = [...state.allCountries].filter((country) =>
-          country.activities.includes(selectedActivity)
-        );
-        return {
-          ...state,
-          allCountries: filteredCountries,
-        };
-      }
-    }
+    // case ACTIVITY_FILTER: {
+    //   const selectedActivity = payload;
+    //   if (selectedActivity === "default") {
+    //     return {
+    //       ...state,
+    //     };
+    //   } else {
+    //     const filteredCountries = [...state.countriesBackUp].filter((country) =>
+    //       country.Activities.map((a) => a.name === selectedActivity)
+    //     );
+    //     return {
+    //       ...state,
+    //       allCountries:
+    //         filteredCountries.length === 0
+    //           ? countriesBackUp
+    //           : filteredCountries,
+    //     };
+    //   }
+    // }
 
     default:
       return { ...state };

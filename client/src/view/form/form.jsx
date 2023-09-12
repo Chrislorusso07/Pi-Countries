@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import "./form.css";
 import axios from "axios";
+import { getCountries } from "../../redux/actions";
 
 const Form = () => {
   const countries = useSelector((state) => state.allCountries);
@@ -13,7 +14,7 @@ const Form = () => {
     country: [],
   });
 
-  console.log(formData);
+  const dispatch = useDispatch();
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -50,6 +51,8 @@ const Form = () => {
       .post("http://localhost:3001/activities", formData)
       .then((res) => alert("Tu actividad fue creada exitosamente"))
       .catch((error) => alert("Tu actividad fue denegada"));
+
+    dispatch(getCountries());
   };
 
   return (
@@ -59,6 +62,7 @@ const Form = () => {
         <div className="form-field">
           <label>Nombre:</label>
           <input
+            placeholder="🏴"
             type="text"
             name="name"
             value={formData.name}
@@ -81,6 +85,7 @@ const Form = () => {
         <div className="form-field">
           <label>Duración:</label>
           <input
+            placeholder="⌛ (meses)"
             type="text"
             name="duration"
             value={formData.duration}
