@@ -14,6 +14,7 @@ const Form = () => {
     country: [],
   });
 
+  console.log(formData);
   const dispatch = useDispatch();
 
   const handleInputChange = (e) => {
@@ -62,7 +63,7 @@ const Form = () => {
         <div className="form-field">
           <label>Nombre:</label>
           <input
-            placeholder="🏴"
+            placeholder="⚽🏀⛷️"
             type="text"
             name="name"
             value={formData.name}
@@ -121,7 +122,9 @@ const Form = () => {
             ))}
           </select>
         </div>
-        <button type="submit">Crear Actividad Turística</button>
+        <button type="submit" disabled={formData.country.length === 0}>
+          Crear Actividad Turística
+        </button>
       </form>
     </div>
   );

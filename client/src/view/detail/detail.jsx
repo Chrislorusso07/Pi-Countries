@@ -18,6 +18,9 @@ const Detail = () => {
 
   return (
     <div className="detail-card">
+      <p className="campeones">
+        {country.name === "Argentine Republic" && "🏆🏆🏆"}
+      </p>
       <h1>ID: {id}</h1>
       <h2>{country.name}</h2>
       <img src={country.flagImage} alt={country.name} className="detail-flag" />
