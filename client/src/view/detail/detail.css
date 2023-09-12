@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&family=Imbue:opsz@10..100&display=swap');
+.detail-card {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f7f7f7b0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: Dancing script;
+}
+
+/* Estilos para el título del país */
+.detail-card h2 {
+  font-size: 24px;
+  margin-top: 0;
+}
+
+/* Estilos para la bandera del país */
+.detail-flag {
+  max-width: 100%;
+  height: auto;
+  margin: 15px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Estilos para los enlaces de actividades */
+.detail-card a {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #007bff;
+  transition: color 0.3s;
+}
+
+.detail-card a:hover {
+  color: #0056b3;
+}
+
+/* Estilos para los detalles del país */
+.detail-card p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+/* Estilos para el ID del país */
+.detail-card h1 {
+  margin-top: 0;
+  font-size: 18px;
+  color: #050706;
+}
+
+.act {
+  font-size: 56px;
+}

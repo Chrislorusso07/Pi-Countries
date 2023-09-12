@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&family=Imbue:opsz@10..100&family=Kanit:ital@1&family=Oswald:wght@500&family=Roboto+Slab:wght@300&family=Signika+Negative&display=swap');
+/* Estilos para el contenedor de detalles de actividad */
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Estilos para el título de actividades */
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Estilos para los párrafos de detalles */
+p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+/* Estilos para los detalles de actividades */
+p {
+  font-weight: bold;
+}
+
+/* Estilos para los detalles de actividad */
+.activity-details {
+  margin-top: 10px;
+  font-weight: normal;
+}
+.actividad {
+  background-color: #f7f7f7a7;
+  font-family: Oswald;
+  
+
+}

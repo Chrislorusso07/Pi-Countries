@@ -1,0 +1,41 @@
+/* home.css */
+
+/* Agrega la imagen de fondo */
+body, html{
+  background-image: url('https://imgs.search.brave.com/6IKOMsF-55tYlTVZ_Y-GnolI0kEcj5cEPWjdjYprqLk/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4u/d2FsbHBhcGVyc2Fm/YXJpLmNvbS85Ny83/OC9oeHU4M1guanBn');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+  
+  /* Resto de tus estilos */
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    background-color: none;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin: 0 10px;
+    border-radius: 5px;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  
+
+
+  
+
+  

@@ -1,0 +1,63 @@
+/* Estilos para el contenedor del formulario */
+.form-container {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+  }
+  
+  /* Estilos para el título del formulario */
+  .form-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Estilos para los campos del formulario */
+  .form-field {
+    margin-bottom: 15px;
+  }
+  
+  .form-field label {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .form-field input[type="text"],
+  .form-field select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  /* Estilos para el botón de enviar */
+  .form-container button {
+    background-color: #ff5722;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .form-container button:hover {
+    background-color: #ff7043; /* Cambia el color al pasar el mouse por encima */
+  }
+  
+  /* Estilos para el select múltiple de países */
+  .form-field select[multiple] {
+    height: 150px;
+  }
+  
+  /* Estilos para el enlace en el select múltiple */
+  .form-field select[multiple] option {
+    font-size: 16px;
+  }
+  

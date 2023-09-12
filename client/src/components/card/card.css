@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Imbue:opsz@10..100&display=swap');
+.card-container {
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    background-color: #c8c8dda8;
+    font-family: Imbue;
+  }
+  
+  .card-title {
+    font-size: 24px;
+    margin: 10px 0;
+  }
+  
+  
+  .card-subtitle {
+    font-size: 16px;
+    color: #0a0a0a;
+  }
+  
+ 
+  .card-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+
+  .cardlink {
+    text-decoration: none;
+    color: inherit;
+  }

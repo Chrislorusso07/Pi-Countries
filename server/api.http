@@ -1,0 +1,21 @@
+GET http://localhost:3001/countries
+
+###
+
+GET http://localhost:3001/countries/3
+
+###
+
+GET http://localhost:3001/countriesname?name=Argentin
+
+###
+
+GET http://localhost:3001/activities
+
+###
+
+POST http://localhost:3001/activities
+Content-Type: application/json
+
+{"name": "Futbol", "difficulty": 1, "duration": "10", "season": "Verano", "country": "Republic of Kenya", "country": "Republic of San Marino"}
+
